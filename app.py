@@ -710,9 +710,9 @@ def main():
             # 表示モードを切替 (絶対スコア / 相対スコア)
             plot_mode = st.radio("表示モード", ("Absolute score","Relative score"), index=0, horizontal=True)
             if plot_mode == "Absolute score":
-                st.plotly_chart(fig_abs, width=True)
+                st.plotly_chart(fig_abs)
             else:
-                st.plotly_chart(fig_rel, width=True)
+                st.plotly_chart(fig_rel)
 
             # 選択した横軸値の詳細を縦に表示する機能
             if all_x_values:
